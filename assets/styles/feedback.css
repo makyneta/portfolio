@@ -1,0 +1,29 @@
+/* ════════════════════════════════════════════════════════════════
+   FEEDBACK PAGE
+   ════════════════════════════════════════════════════════════════ */
+
+/* ── Hero ── */
+#feedback-hero {
+  position: relative;
+  padding: 9rem 6rem 0;
+  border-bottom: 1px solid var(--brd);
+  background: var(--bg2);
+}
+
+/* ── Grid ── */
+#feedback-grid {
+  padding: 5rem 6rem 5rem;
+  background: var(--bg2);
+}
+.fb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  #feedback-hero { padding: 6.5rem 1.5rem 0; }
+  #feedback-grid { padding: 3rem 1.5rem 3rem; }
+  .fb-grid { grid-template-columns: 1fr; }
+}
